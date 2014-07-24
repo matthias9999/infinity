@@ -21,6 +21,7 @@ module InfinityTalents
     # config.i18n.default_locale = :de
     config.assets.initialize_on_precompile = false
     config.assets.paths << "#{Rails.root}/app/assets/fonts"
+    config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/
     config.serve_static_assets = true
   end
 end
